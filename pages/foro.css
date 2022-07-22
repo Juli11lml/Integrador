@@ -1,0 +1,83 @@
+.foro .container {
+    height: 700px;
+    background: #1e2b38;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: inset -1px -1px 70px 22px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.black_bg {
+    background: #000;
+    height: 80%;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    overflow-y:scroll;
+    color: white;
+}
+
+.chat {
+    margin: 10px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+span {
+    cursor: pointer;
+}
+.c1 {
+    color: aqua;
+}
+.c2 {
+    color: #42FF00;
+}
+.c3 {
+    color: #FF00FB;
+}
+.c4 {
+    color: #F7FF00;
+}
+
+.textarea_div {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    background: #363530;
+    color: #C8AD55;
+    width: 90%;
+    height: 70%;
+    resize: none;
+    border: 1px solid #C8AD55;
+    border-radius: 5px;
+    cursor: no-drop;
+}
+textarea::placeholder{
+    color: #C8AD55;
+}
+textarea:active {
+    border: none;
+}
+
+.alert {
+    text-align: center;
+    color: #C22E85;
+} 
+
+@media screen and (min-width: 350px) {
+    .foro .container {
+        margin-bottom: 2rem;
+    }
+    footer{
+        padding: 1.5rem;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+}

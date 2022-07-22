@@ -1,0 +1,72 @@
+h1 {
+    color: #C8AD55;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+.texto h3 {
+    text-decoration: underline;
+    margin-top: -25px;
+    font-size: 20px;
+}
+
+.title {
+    padding: 1rem;
+    font-size: 25px;
+    text-align: left;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.card {
+    width: 30%;
+    margin: 10px;
+    color: #C8AD55;
+}
+.img img {
+    width: 200px;
+}
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.fa-spotify {
+    color: #1db954;
+}
+.fa-youtube {
+    color: #ff0000;
+}
+.fa-brands {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .img img {
+        width: 200px;
+    }
+    footer{
+        padding: 1.5rem;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+}

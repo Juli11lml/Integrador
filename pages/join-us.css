@@ -1,0 +1,95 @@
+.join-us {
+    margin: 2rem;
+}
+.join-us .container {
+    background: #592242;
+    border-radius: 15px;
+    box-shadow: inset -1px -1px 70px 22px rgba(50,19,37,1);
+}
+.join-us .container .title {
+    color: #C8AD55;
+    padding-top: 20px;
+}
+
+.questions {
+    color: #C8AD55;
+    font-size: 20px;
+    text-align: center;
+}
+.questions li {
+    color: #df7d1b;;
+    margin: 10px;
+    text-align: left;
+}
+.questions p {
+    background: #ffffff;
+    display: inline-block;
+    font-size: 30px;
+    color: #240F1B;
+}
+
+.warning-title {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.curso-w {
+    width: 90%;
+    margin: 0 auto;
+    color: #C8AD55;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.curso-w li {
+    color: #C8AD55;
+    font-weight: bold;
+    list-style-type:disc;
+}
+.curso-w ol {
+    margin: 30px;
+}
+.curso-w h2 {
+    font-size: 30px;
+}
+.curso-w h3 {
+    font-family: 'Esteban';
+    text-decoration: underline;
+    margin: 30px;
+}
+.curso-w a {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.curso-w a:hover{
+    color: #DA66AA;
+}
+
+.letra-pequeña {
+    width: 60%;
+    font-size: 10px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 350px) {
+    li {
+        font-size: 16px;
+    }
+    .curso-w h3 {
+        margin: 0;
+    }
+    .letra-pequeña {
+        width: 95%;
+    }
+    footer{
+        padding: 1.5rem;
+    }
+    footer h2{
+        font-size: 20px;
+    }
+}
+
