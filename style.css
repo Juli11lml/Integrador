@@ -311,6 +311,10 @@ footer {
      position: relative;
      /* para que el log-in no se oculte detrás de la 2da barra */
     }
+    /* WARNING */
+    .warning_container {
+        display: none;
+    }
     /* CARDS */
     .card-container {
         flex-direction: column;
