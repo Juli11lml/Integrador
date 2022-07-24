@@ -12,6 +12,9 @@ body {
     width: 100vw;
     max-width: 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 /* Estilos generales */
 .container {
@@ -47,7 +50,28 @@ h1, h2, h3 {
     --orange: #df7d1b;
     --blood: #BB4430;
 }
-
+/* -- BOTONES -- */
+.btn {
+    margin: 0 auto;
+    padding: 15px 35px;
+    border: 1px inset #C8AD55;
+    border-radius: 5px;
+    color: #C8AD55;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Esteban';
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.29);
+    background: rgba(89,110,131,1);
+    background: linear-gradient(to bottom, rgba(89,110,131,1) 0%, rgba(89,110,131,1) 10%, rgba(62,86,110,1) 35%, rgba(30,43,56,1) 73%, rgba(34,61,88,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596e83', endColorstr='#223d58', GradientType=0 );
+    transition: all 0.1s linear;
+}
+.btn:hover {
+    border: 1px solid transparent;
+    color: #D5AC21;
+    transform: scale(1.1);
+    transition: all 0.1s linear;
+}
 /* ---------------------- SECTION HEADER - NAV ----------------------- */
 header {
     width: 100%;
@@ -57,7 +81,7 @@ header {
 }
 
 /* BOTON */
-input {
+.checkbox {
     display: none;
 }
 label .fa-bars {
@@ -205,7 +229,10 @@ label .fa-bars {
 .contact p {
     color: var(--gold);
 }
-
+.container_contact {
+    width: 50%;
+    margin: 0 auto;
+}
 .formulario {
     display: flex;
     flex-wrap: wrap;
@@ -213,18 +240,15 @@ label .fa-bars {
 }
 .formulario input[type="text"],
 .formulario input[type="email"],
+.formulario input[type="password"],
 .formulario textarea {
-    background: #C8AD55;
-    border: 2px solid #BB4430;
+    background: #CBBB85;
+    border: 2px inset #BB4430;
     border-radius: 5px;
     padding: 15px 20px;
     font-size: 20px;
     color: #a4a4a4;
-}
-.formulario input[type="text"]:focus,
-.formulario input[type="email"]:focus,
-.formulario textarea:focus {
-    border: 2px solid #BB4430;
+    font-family: 'Iconsolasta';
 }
 .formulario input[type="text"],
 .formulario input[type="email"] {
@@ -232,28 +256,14 @@ label .fa-bars {
     margin-bottom: 15px;
 }
 .formulario textarea {
-    width: 50%;
+    width: 100%;
     height: 100px;
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 100%;
+    max-width: 100%;
     min-height: 100px;
     max-height: 150px;
     margin: 0 auto 15px auto;
 }
-.formulario .btn {
-    margin: auto;
-    background: #BB4430;
-    color: #C8AD55;
-    border: none;
-    border-radius: 3px;
-    padding: 15px 40px;
-    cursor: pointer;
-}
-.formulario .btn:hover {
-    background: #D1604D;
-}
-::placeholder {color: #592242;
-    font-family: "Inconsolata";}
 
 /* ------- FOOTER -------- */
 footer {
@@ -335,9 +345,14 @@ footer {
     }
 
     /* CONTACTO */
-    .formulario textarea {
-        width: 90%;
-        min-width: 90%;
-        max-width: 90%;
+    .container_contact {
+        width: 80%;
+    }
+    .formulario {
+        flex-direction: column;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"] {
+        width: 100%;
     }
  }

@@ -17,7 +17,7 @@
                 <img src="assets/logo.png" alt="logo-sobek">
             </div>
             <nav class="navbar">
-                <input type="checkbox" id="toggle-menu">
+                <input class="checkbox" type="checkbox" id="toggle-menu">
                 <label for="toggle-menu"><i class="fa-solid fa-bars" id="toggle-menu"></i></label>
                 <ul class="menu">
                     <li><a href="#inicio" class="item_list">INICIO</a></li>
@@ -113,14 +113,15 @@
     <!-- SECTION CONTACTO -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h3 class="title">Contactame</h3>
-            <form class="formulario">
-                <input type="text" placeholder="Nombre" name="name" required>
-                <input type="email" placeholder="Correo" name="email" required>
-                <textarea name="mensaje" placeholder="Mensaje:">
-                </textarea>
-                <input class="btn" type="submit" value="Enviar">
-            </form>
+            <div class="container_contact">
+                <h3 class="title">Contactame</h3>
+                <form class="formulario">
+                    <input type="text" placeholder="Nombre" name="name" required>
+                    <input type="email" placeholder="Correo" name="email" required>
+                    <textarea name="mensaje" placeholder="Mensaje:"></textarea>
+                    <button class="btn">ENVIAR</button>
+                </form>
+            </div>
         </div>
     </section>
     

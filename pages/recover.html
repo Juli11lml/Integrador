@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar password</title>
-    <link rel="stylesheet" href="recover.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="log-in.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <img src="../assets/logo.png" alt="logo-sobek">
             </div>
             <nav class="navbar">
-                <input type="checkbox" id="toggle-menu">
+                <input class="checkbox" type="checkbox" id="toggle-menu">
                 <label for="toggle-menu"><i class="fa-solid fa-bars" id="toggle-menu"></i></label>
                 <ul class="menu">
                     <li><a href="../index.html" class="item_list"><i class="fa-solid fa-arrow-left"></i> INICIO</a></li>
@@ -26,28 +26,27 @@
     </header>
     
     <div class="container">
-        <div class="warning">
-            <h1><i class="fa-solid fa-skull-crossbones"></i> ¡PRECAUCIÓN! <i class="fa-solid fa-skull-crossbones"></i></h1>                   
-            <p>Por motivos de seguridad te recomendamos no usar tu mail real en esta web. La creación de un usuario solo te dará acceso al foro, no es necesario para contactar con La Cazadora. Podés aprovecharlo para comunicarte con otros usuarios o dejar tu opinión. </p>
-        </div>
-
-        <section class="recover">
-            <div class="titulo">
-                <h2>Recuperá tu contraseña</h2>
-                <h3>¿Tan pelotud@ vas a ser de olvidarte?</h3>
-                <p>Poné tu mail y te va a llegar un correo con info para cambiar tu contraseña</p>
+        <div class="container_form">
+            <div class="precaution">
+                <h1><i class="fa-solid fa-skull-crossbones"></i> ¡PRECAUCIÓN! <i class="fa-solid fa-skull-crossbones"></i></h1>                   
+                <p>Por motivos de seguridad te recomendamos no usar tu mail real en esta web. La creación de un usuario solo te dará acceso al foro, no es necesario para contactar con La Cazadora. Podés aprovecharlo para comunicarte con otros usuarios o dejar tu opinión. </p>
             </div>
-            <form class="formulario" action="">
-                <input class="input text" type="email" name="" id="" placeholder="Email:">
                 
-            </form>
-            <div class="btn-div">
-                <button class="btn"><a href="#">RECUPERAR</a></button>
-            </div>
-
-
+            <section class="sign-in">
+                <div class="titulo-recover">
+                    <h2>Recuperá tu contraseña</h2>
+                    <h3>¿Tan pelotud@ vas a ser de olvidarte?</h3>
+                    <p>Poné tu mail y te va a llegar un correo con info para cambiar tu contraseña</p>
+                </div>
+                <form class="formulario" action="">
+                    <input type="email" name="" id="" placeholder="Email:" required>
+                </form>
+                <div class="btn-div">
+                    <button class="btn"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ENVIAR</a></button>
+                </div>
+            </section>
+        </div>
     </div>
-    
     <footer>
         <h2>La Cazadora🐊 - Reserved Rights TM 2022</h2>
     </footer>
