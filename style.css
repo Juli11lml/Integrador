@@ -47,7 +47,6 @@ h1, h2, h3 {
     --barley-wine: #592242;
     --grape: #C22E85;
     --hibiscus: #1e2b38;
-    --orange: #df7d1b;
     --blood: #BB4430;
 }
 /* -- BOTONES -- */
@@ -140,6 +139,16 @@ label .fa-bars {
     border-bottom: transparent;
 }
 
+/* ------ SECTION PRESENTACION -------- */
+.presentation .container {
+    background: url('assets/kit_de_caza.jpg') center #321325;
+}
+.img_presentation img {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
 
 /* ------------------ SECTION WARNING -------------------- */
 .warning_container .container {
@@ -320,6 +329,11 @@ footer {
     .sub_list {
      position: relative;
      /* para que el log-in no se oculte detrás de la 2da barra */
+    }
+    /* PRESENTATION */
+    .img_presentation img {
+        width: 250px;
+        margin: 0 auto;
     }
     /* WARNING */
     .warning_container {
