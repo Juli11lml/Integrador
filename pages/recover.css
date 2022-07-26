@@ -1,0 +1,11 @@
+.formulario {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+.formulario input[type="text"] {
+    width: 90%;
+}
