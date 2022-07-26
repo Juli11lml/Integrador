@@ -6,6 +6,6 @@
     margin: 0 auto;
     width: 90%;
 }
-.formulario input[type="text"] {
+.formulario input[type="email"] {
     width: 90%;
 }
